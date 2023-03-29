@@ -16,12 +16,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @Getter
 @Entity
-public class ContasFixas {
+public class GastosFixos {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(columnDefinition = "uuid", name = "idOContasFixas", updatable = false, unique = true, nullable = false)	
-	private UUID idContasFixas;
+	@Column(columnDefinition = "uuid", name = "idOGastosFixos", updatable = false, unique = true, nullable = false)	
+	private UUID idGastosFixos;
 	
 	//GASTOS FIXOS 
 	private BigDecimal aluguel;
